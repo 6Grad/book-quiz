@@ -1,0 +1,32 @@
+#{extends 'main.html' /} 
+#{set title:'Participate' /}
+#{set 'moreScripts'}
+  <script type="text/javascript" src="/public/javascripts/jquery-1.6.2.min.js">
+  </script>
+    
+  <script type="text/javascript" src="/public/javascripts/jquery.placeholder.js">
+  </script>
+  
+#{/set}
+
+<div id="fan">
+  #{form @Application.participate(), id:'form'} 
+    #{field 'userName'}
+       
+      <input class="${field.errorClass}" type="text" 
+        id="${field.id}" name="${field.name}" 
+        value="${field.flash}"
+        placeholder="Name"/>
+    #{/}
+    #{field 'mailAddress'}
+     
+      <input class="${field.errorClass}" type="text" 
+        id="${field.id}" name="${field.name}" 
+        value="${field.flash}"
+        placeholder="Email"/>
+     
+    #{/}       
+  #{/form}
+  <div id="button" onclick="$('#form').submit();"></div>
+</div>
+

@@ -1,0 +1,133 @@
+
+html { font-size:100.01%; }
+body {
+  font-size: 75%;
+  color: #222;
+  background: #fff;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+/*fb page*/
+#fb-page {
+  width: 520px;
+  height: 500px;
+  position: absolute;
+}
+
+
+
+/*page notfan*/
+#fb-page #notfan {
+  width: inherit;
+  height: inherit; 
+  background:#ffffff url('/public/images/bg-notfan.png') no-repeat left top;
+}
+#notfan #btn_win {
+  position: absolute;
+  cursor: pointer;
+  width: 128px;
+  height: 30px;
+  bottom: 16px;
+  left: 371px;
+}
+
+/*page fan*/
+#fb-page #fan {
+  width: inherit;
+  height: inherit; 
+  background:#ffffff url('/public/images/bg_fan.png') no-repeat left top;
+}
+#fan #form {
+  position: absolute;
+  left: 0px;
+  top: 180px;
+  width: 520px;
+}
+
+#form input {
+  margin-left: auto;
+  margin-right: auto;
+  width: 310px;
+  display: block;
+  font-size:1.5em;
+  
+  border:1px solid #999;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px; 
+}
+
+#form input.hasError {
+  border:2px solid red;
+}
+#form #mailAddress {
+  margin-top: 10px;
+}
+
+#fan #button {
+  cursor: pointer;
+  position: absolute;
+  width: 130px;
+  height: 30px;
+  bottom: 24px;
+  left: 365px;
+}
+
+/*thanks*/
+#fb-page #thanks {
+  width: inherit;
+  height: inherit; 
+  background:#ffffff url('/public/images/bg_thanks.png') no-repeat left top;
+}
+
+#thanks .button {
+  position: absolute;
+  cursor: pointer;
+  width: 160px;
+  height: 26px;
+  right: 24px;
+}
+
+#thanks #btn_share {
+  bottom: 65px;
+}
+
+#thanks #btn_back {
+  bottom: 26px;
+}
+
+
+/*forms*/
+input[type=text], input[type=password], input[type=url], input[type=email],
+input.text, input.title,
+textarea {
+  padding:5px;
+  background-color:#fff;
+  border:1px solid black;
+}
+
+/* from placeholder plugin*/
+
+[placeholder]{
+	cursor:pointer;
+	color:black;
+	padding:5px;
+	
+}
+[placeholder]:active,
+[placeholder]:focus{
+	cursor:text;
+	color:#333;
+	border:1px solid #0a0;
+	
+	-moz-box-shadow:0 0 5px #0a0, 0 0 5px rgba(0,0,0,0.25) inset;
+	-webkit-box-shadow:0 0 5px #0a0, 0 0 5px rgba(0,0,0,0.25) inset;
+	box-shadow:0 0 5px #0a0, 0 0 5px rgba(0,0,0,0.25) inset;
+}
+/*
+If the input has placeholder="" AND value="" darken its appearance to show it is pre-populated and not a form hint.
+*/
+[placeholder][value]{
+	scolor:#333;
+}
+  
+

@@ -1,0 +1,11 @@
+.classpath
+.project
+.settings/
+eclipse/
+logs/
+modules/
+precompiled/
+tmp/
+test/
+.DS_Store
+db/
