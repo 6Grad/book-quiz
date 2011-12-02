@@ -21,26 +21,26 @@ import net.sf.oval.constraint.NotEmpty;
 
 public class Application extends Controller {
 
-  public static void dispatch(String signed_request)
-      throws FBException {
+  public static void dispatch(String signed_request) throws FBException {
 
     if (signed_request != null) {
       SignedRequest sr = FB.getSignedRequest(signed_request);
-      
+
       session.put("locale", sr.getLocale());
-      
-      if(sr.isAdmin()){
-        /*get him to admin area*/
-        notfan();
-      }else {
-        if(sr.liked()) {
-          fan();
-        }else {
-          notfan();
-        }
+
+      if (sr.isAdmin()) {
+        /* get him to admin area, if available */
+        // notfan();
       }
+
+      if (sr.liked()) {
+        fan();
+      } else {
+        notfan();
+      }
+
     }
-    
+
     error("only to be used within a Facebook Page Tab");
 
   }
@@ -81,15 +81,17 @@ public class Application extends Controller {
   public static void notfan() {
     render();
   }
+
   /* Page 2 */
   public static void fan() {
     render();
   }
-  /* Page 3*/
+
+  /* Page 3 */
   public static void thanks() {
-    
+
     String locale = session.get("locale");
-    if ( StringUtils.isEmpty(locale)) {
+    if (StringUtils.isEmpty(locale)) {
       locale = SignedRequest.DEFAULT_LOCALE;
     }
     render(locale);
