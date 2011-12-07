@@ -2,28 +2,18 @@
 # For example, for French create a messages.fr file
 #
 
-page_url=http://www.facebook.com/rasenschach?sk=wettbewerb
+page_url=http://www.facebook.com/knowhowbuch
 
-#FB 'feed' dialog
-feed_link=http://www.facebook.com/rasenschach?sk=wettbewerb
-feed_picture=teilen_bild_%s_75x75.jpg
-feed_name=%s
-feed_caption=www.rasenschach.ch
+#FB 'feed' dialog aka Share
+feed_link=http://www.facebook.com/knowhowbuch
+feed_picture=feed_picture.jpg
+feed_caption=http://www.facebook.com/knowhowbuch
 
-feed_description=Was für ein Fan bist du? Mach mit beim Rasenschach-Wettbewerb!
+#Title
+feed_name=Ich habe an der Verlosung für ein Facebook-Marketing-Buch teilgenommen.
+feed_description=Mach jetzt auch mit und gewinne ein Gratis-Exemplar!
 
-answer_1=Ich bin der wahre Stadion Fan!
-answer_2=Ich bin der Bier- und Couch-Fan!
-answer_3=Ich bin der englische Pub-Fan!
-
-
-#FB 'apprequests' dialog
-
-apprequests_title=Freunde einladen
-apprequests_message=Mach mit beim Rasenschach-Wettbewerb und sag uns, was für ein Fan du bist!
-apprequests_filters=
-
-dialog_win=Drücke "Gefällt mir" und nimm am Wettbewerb teil! 
+dialog_win=Drücke "Gefällt mir" und nimm an der Verlosung teil! 
 
 dialog_agb=Teilnahmebedingungen Rasenschach-Wettbewerb<br/><br/>\
 Die Teilnahme an der Promotion erfolgt über die Anwendung Rasenschach-Wettbewerb auf der \

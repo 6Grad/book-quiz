@@ -29,8 +29,7 @@ public class Application extends Controller {
       session.put("locale", sr.getLocale());
 
       if (sr.isAdmin()) {
-        /* get him to admin area, if available */
-        // notfan();
+        admin();
       }
 
       if (sr.liked()) {
@@ -43,6 +42,11 @@ public class Application extends Controller {
 
     error("only to be used within a Facebook Page Tab");
 
+  }
+
+  public static void admin() {
+
+    render();
   }
 
   public static void redirect() {
@@ -69,7 +73,7 @@ public class Application extends Controller {
     p = new Participant();
     p.mailAddress = mailAddress;
     p.name = userName;
-    p.save();
+    p.validateAndCreate();
 
     session.put("id", p.id);
 

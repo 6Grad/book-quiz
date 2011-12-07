@@ -9,8 +9,9 @@ GET		/notfan									Application.notfan
 POST	/participate							Application.participate
 GET		/thanks									Application.thanks
 GET		/redirect								Application.redirect
+GET		/admin									Application.admin
 			
-#GET		/export									Application.export
+GET		/export									Application.export
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
