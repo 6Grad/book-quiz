@@ -3,15 +3,15 @@
 # ~~~~
 
 # Home page
-*		/										Application.dispatch					
-GET 	/fan									Application.fan
-GET		/notfan									Application.notfan
-POST	/participate							Application.participate
-GET		/thanks									Application.thanks
-GET		/redirect								Application.redirect
-GET		/admin									Application.admin
+*		/										Quiz.dispatch					
+GET 	/fan									Quiz.fan
+GET		/notfan									Quiz.notfan
+POST	/participate							Quiz.participate
+GET		/thanks									Quiz.thanks
+GET		/redirect								Quiz.redirect
+GET		/admin									Quiz.admin
 			
-GET		/export									Application.export
+GET		/export									Quiz.export
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

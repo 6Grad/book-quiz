@@ -1,0 +1,22 @@
+#{extends 'main.html' /} 
+#{set title:'Admin area' /} 
+
+<div id="admin">
+
+  <h1>Welcome Admin</h1>
+
+  <p>
+    For now you can see the user pages:
+  </p>
+  
+  <ul>
+    <li><a href="@{Quiz.fan()}">fan</a></li>
+    <li><a href="@{Quiz.notfan()}">Not-fan</a></li>
+    <li><a href="@{Quiz.thanks()}">Thanks</a></li>
+  </ul>
+
+  <p>and <a href="@{Quiz.export()}">export</a> the Participat list</p>
+
+  <p>more to come</p>
+
+</div>
